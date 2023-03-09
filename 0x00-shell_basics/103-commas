@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -Ap1 | sort -df | awk '{printf("%s,",$0)} END {print ""}'
