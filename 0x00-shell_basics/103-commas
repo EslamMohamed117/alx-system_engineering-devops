@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap1 | sort -df | awk '{printf("%s,",$0)} END {print ""}'
+ls -Ap1 | sort -df | awk '{printf("%s,", $0)} END {print ""}' | sed 's/,$/\n/'
